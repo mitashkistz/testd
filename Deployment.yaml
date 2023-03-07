@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webui
+  labels:
+    app.kubernetes.io/name: webui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: webui
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: webui
+    spec:
+      containers:
+      - name: webui
+        image: mitashkistz/testd:pv2
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webui
+spec:
+  selector:
+    app.kubernetes.io/name: webui
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer
