@@ -25,7 +25,7 @@
     "@angular/service-worker": "~9.0.6",
     "@auth0/angular-jwt": "^5.0.1",
     "@iplab/ngx-file-upload": "^2.0.9",
-    "@ng-select/ng-option-highlight": "0.0.6",
+    "@ng-select/ng-option-highlight": "0.0.7",
     "@ng-select/ng-select": "^6.0.0",
     "@tinkoff/ng-dompurify": "^3.0.0",
     "@types/dompurify": "^2.2.1",
