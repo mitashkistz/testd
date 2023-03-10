@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: webui
-        image: mitashkistz/testd:v2
+        image: mitashkistz/testd:v4
         ports:
         - containerPort: 8080
 ---
