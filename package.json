@@ -37,7 +37,7 @@
     "pdfmake": "^0.1.70",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "xlsx": "^0.16.9",
+    "xlsx": "^0.18.0",
     "zone.js": "~0.10.2",
     "bootstrap-icons": "^1.8.1",
     "bootstrap": "^5.1.3",
